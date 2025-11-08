@@ -1,0 +1,23 @@
+{
+  "name": "my-cv",
+  "version": "1.0.0",
+  "description": "Portfolio website for Edrine Mwesigwa",
+  "scripts": {
+    "lint:html": "htmlhint index.html",
+    "lint:css": "stylelint styles.css",
+    "lint": "npm run lint:html && npm run lint:css",
+    "build": "echo 'No build step required for static site'",
+    "test": "npm run lint"
+  },
+  "devDependencies": {
+    "htmlhint": "^1.1.4",
+    "stylelint": "^15.10.3",
+    "stylelint-config-standard": "^34.0.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/edrineSubaru/My_Cv.git"
+  },
+  "author": "Edrine Mwesigwa",
+  "license": "MIT"
+}
