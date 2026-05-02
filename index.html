@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
       property="og:description"
       content="Full Stack Developer and AI Integration Engineer portfolio."
     />
-    <meta property="og:image" content="Images/edrine.jpg" />
+    <meta property="og:image" content="Images/edrine.jpeg" />
     <meta property="og:url" content="https://edrine-mwesigwa-portfolio.com" />
     <script type="application/ld+json">
       {
@@ -47,7 +47,7 @@
       <div class="container">
         <img
           loading="lazy"
-          src="Images/edrine.jpg"
+          src="Images/edrine.jpeg"
           alt="Edrine Mwesigwa"
           class="profile-pic"
         />
@@ -1094,7 +1094,7 @@
           const subject = document.getElementById("subject").value;
           const message = document.getElementById("message").value;
           window.location.href = `mailto:edrineviper@yahoo.com?subject=${encodeURIComponent(
-            subject
+            subject,
           )}&body=${encodeURIComponent(message)}`;
         });
 
@@ -1131,7 +1131,7 @@
       }
 
       const viewMoreExperienceBtn = document.querySelector(
-        ".experience .view-more-experience-btn"
+        ".experience .view-more-experience-btn",
       );
       if (viewMoreExperienceBtn) {
         viewMoreExperienceBtn.addEventListener("click", () => {
@@ -1144,14 +1144,14 @@
       }
 
       const viewMoreArchitectureBtn = document.querySelector(
-        ".architecture .view-more-architecture-btn"
+        ".architecture .view-more-architecture-btn",
       );
       if (viewMoreArchitectureBtn) {
         viewMoreArchitectureBtn.addEventListener("click", () => {
           const ul = viewMoreArchitectureBtn.nextElementSibling;
           ul.classList.toggle("expanded");
           viewMoreArchitectureBtn.textContent = ul.classList.contains(
-            "expanded"
+            "expanded",
           )
             ? "View Less"
             : "View More";
